@@ -15,6 +15,163 @@ public class Datos {
     LinkedList<Enfermedad> enfermedades;
     LinkedList<String> nombreEnf;
 
+    //--------------------------------------------------------------------------
+    //-------------------- ENFERMEDADES VIRALES SINTOMAS -----------------------
+    //--------------------------------------------------------------------------
+    private void enfermedadesViralesSintomas() {
+        LinkedList<String> virales = new LinkedList<>();
+        LinkedList<String> p = new LinkedList<>();
+        virales.add("DIARREA");
+        p.add("¿Usted tiene diarrea?");
+        
+        virales.add("DIFICULTAD-PARA-RESPIRAR");
+        p.add("¿Presenta dificultad para respirar?");
+        
+        virales.add("DOLOR-EN-EL-PECHO");
+        p.add("¿Siente dolor en el pecho?");
+        
+        virales.add("ERUPCION-CUTANEA");
+        p.add("¿Usted presenta erupciones cutáneas?");
+        
+        virales.add("CANSANCIO");
+        p.add("¿Usted se siente cansado/a?");
+        
+        virales.add("PERDIDA-DE-LA-MOVILIDAD");
+        p.add("¿Siente que ha perdido alguna parte de movilidad en su cuerpo?");
+        
+        virales.add("PERDIDA-DEL-GUSTO-Y-OLFATO");
+        p.add("¿Ha perdido el sentido del gusto y del olfato?");
+        
+        virales.add("PERDIDA-DEL-HABLA");
+        p.add("¿Ha perdido la voz?");
+        
+        virales.add("TOS");
+        p.add("¿Presenta tos?");
+        
+        virales.add("DOLOR-DE-GARGANTA");
+        p.add("¿Presenta dolor de garganta?");
+        
+        virales.add("FATIGA");
+        p.add("¿Tiene fatiga?");
+        
+        virales.add("VOMITO");
+        p.add("¿Presenta vómitos?");
+        
+        virales.add("ESCALOSFRIOS");
+        p.add("¿Siente escalosfrios?");
+        
+        virales.add("NAUSEAS");
+        p.add("¿Usted siente náuseas?");
+        
+        virales.add("DOLOR-EN-LOS-OJOS");
+        p.add("¿Tiene dolor en los ojos?");
+        
+        virales.add("MAREOS");
+         p.add("¿Se siente mareado?");
+         
+        virales.add("ANOREXIA");
+        p.add("¿Usted padece de anorexia?");
+        
+        virales.add("DOLOR-ABDOMINAL");
+        p.add("¿Presenta dolor abdominal?");
+         
+        virales.add("DELIRIO");
+        p.add("¿Ha tenido delirios?");
+        
+        virales.add("PIEL-Y-OJOS-AMARILLOS");
+        p.add("¿Su piel y sus ojos estan de color amarillo?");
+        
+        virales.add("SANGRADO");
+         p.add("¿Presenta hemorrágea?");
+         
+        virales.add("DOLOR-ARTICULAR");
+        p.add("¿Siente dolor en sus articulaciones?");
+
+    }
+
+    // COVID
+    private void covid() {
+        Enfermedad covid = new Enfermedad();
+        covid.addSintoma("DIARREA", 3);
+        covid.addSintoma("DIFICULTAD-PARA-RESPIRAR", 5);
+        covid.addSintoma("DOLOR-DE-CABEZA", 2);
+        covid.addSintoma("DOLOR-EN-EL-PECHO", 5);
+        covid.addSintoma("ERUPCION-CUTANEA", 2);
+        covid.addSintoma("CANSACIO", 3);
+        covid.addSintoma("FIEBRE", 2);
+        covid.addSintoma("PERDIDA-DE-LA-MOVILIDAD", 4);
+        covid.addSintoma("PERDIDA-DEL-GUSTO-Y-OLFATO", 5);
+        covid.addSintoma("PERDIDA-DEL-HABLA", 4);
+        covid.addSintoma("TOS", 4);
+        enfermedades.add(covid);
+        nombreEnf.add("Covid 19");
+    }
+
+    // DENGUE
+        private void dengue() {
+        Enfermedad dengue = new Enfermedad();
+        dengue.addSintoma("DOLOR-DE-CABEZA", 2);
+        dengue.addSintoma("DOLOR-DE-GARGANTA", 3);
+        dengue.addSintoma("ERUPCION-CUTANEA", 3);
+        dengue.addSintoma("ESCALOSFRIOS", 3);
+        dengue.addSintoma("FATIGA", 3);
+        dengue.addSintoma("FIEBRE", 2);
+        dengue.addSintoma("DOLOR-CORPORAL", 3);
+        dengue.addSintoma("NAUSEAS", 3);
+        dengue.addSintoma("FALTA-APETITO", 2);
+        dengue.addSintoma("VOMITO", 3);
+        enfermedades.add(dengue);
+        nombreEnf.add("Dengue");
+    }
+    // MAYARO
+        private void mayaro() {
+        Enfermedad mayaro = new Enfermedad();
+        mayaro.addSintoma("DIARREA", 3);
+        mayaro.addSintoma("DOLOR-DE-CABEZA", 2);
+        mayaro.addSintoma("DOLOR-EN-LOS-OJOS", 5);
+        mayaro.addSintoma("ERUPCION-CUTANEA", 2);
+        mayaro.addSintoma("FIEBRE", 2);
+        mayaro.addSintoma("MAREOS", 5);
+        mayaro.addSintoma("ANOREXIA", 5);
+        mayaro.addSintoma("NAUSEAS", 3);
+        mayaro.addSintoma("VOMITO", 3);
+        enfermedades.add(mayaro);
+        nombreEnf.add("Mayaro");
+    } 
+    // FIEBRE-AMARILLA
+        private void fiebreAmarilla() {
+        Enfermedad fiebreAmarilla = new Enfermedad();
+        fiebreAmarilla.addSintoma("FIEBRE", 2);
+        fiebreAmarilla.addSintoma("DELIRIO", 5);
+        fiebreAmarilla.addSintoma("DOLOR-CORPORAL", 3);
+        fiebreAmarilla.addSintoma("DOLOR-DE-CABEZA", 2);
+        fiebreAmarilla.addSintoma("ESCALOFRIOS", 3);
+        fiebreAmarilla.addSintoma("FATIGA", 3);
+        fiebreAmarilla.addSintoma("NAUSEAS", 3);
+        fiebreAmarilla.addSintoma("FALTA-APETITO", 2);
+        fiebreAmarilla.addSintoma("PIEL-Y-OJOS-AMARILLOS", 5);
+        fiebreAmarilla.addSintoma("SANGRADO", 5);
+        fiebreAmarilla.addSintoma("VOMITO", 3);
+        enfermedades.add(fiebreAmarilla);
+        nombreEnf.add("Fiebre Amarilla");
+    }
+    // CHINKUNGUNHA
+        private void chikunguna() {
+        Enfermedad chikunguna = new Enfermedad();
+        chikunguna.addSintoma("FIEBRE", 2);
+        chikunguna.addSintoma("DOLOR-CORPORAL", 3);
+        chikunguna.addSintoma("DOLOR-DE-CABEZA", 2);
+        chikunguna.addSintoma("DOLOR-ARTICULAR", 5);
+        chikunguna.addSintoma("ERUPCION-CUTANEA", 2);
+        chikunguna.addSintoma("ESCALOFRIOS", 3);
+        chikunguna.addSintoma("FATIGA", 3);
+        enfermedades.add(chikunguna);
+        nombreEnf.add("Chinkunguña");
+    }
+        
+    //--------------------------------------------------------------------------
+    //------------------ ENFERMEDADES INTESTINALES SINTOMAS --------------------
+    //--------------------------------------------------------------------------
     private void SintomasInstetinales() {
         LinkedList<String> instestinales = new LinkedList<>();
         LinkedList<String> p = new LinkedList<>();
