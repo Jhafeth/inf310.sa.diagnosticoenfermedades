@@ -303,90 +303,97 @@ public class Datos {
     }
 
     //--------------------------------------------------------------------------
-    //------------------ ENFERMEDADES INTESTINALES SINTOMAS --------------------
+    //------------------ ENFERMEDADES CARDIACAS SINTOMAS --------------------
     //--------------------------------------------------------------------------
-    private void SintomasInstetinales() {
-        LinkedList<String> instestinales = new LinkedList<>();
+    private void SintomasCardiacas() {
+        LinkedList<String> cardiacas = new LinkedList<>();
         LinkedList<String> p = new LinkedList<>();
-        instestinales.add("ESCALOFRIOS");
-        p.add("¿Usted siente escalofríos?");
-        instestinales.add("FATIGA");
-        p.add("¿Tiene fatiga?");
-        instestinales.add("PERDIDA-PESO");
-        p.add("¿Siente que ha perdido peso?");
-        instestinales.add("DIARREA");
-        p.add("¿Usted tiene diarrea?");
-        instestinales.add("SANGRE-HECES");
-        p.add("¿Presenta sangre en las heces?");
-        instestinales.add("DECOLORACION-AMARILLA-OJOS");
-        p.add("¿Presenta decoloración amarilla en los ojos?");
-        instestinales.add("DECOLORACION-AMARILLA-PIEL");
-        p.add("¿Presenta decoloración amarilla en la piel?");
-        instestinales.add("ORINA-AMARILLA-OSCURA");
-        p.add("¿Usted orina amarillo oscuro?");
-        instestinales.add("NAUSEAS");
-        p.add("¿Usted siente náuseas?");
-        instestinales.add("VOMITO");
+        cardiacas.add("FALTA-ALIENTO-ACTIVIDAD-FISICA");
+        p.add("¿Usted siente falta de aliento cuando hace actividad fisica?");
+        cardiacas.add("LATIDOS-ACELERADOS");
+        p.add("¿Siente que sus latidos son acelerados?");
+        cardiacas.add("HINCHAZON-ABDOMEN");
+        p.add("¿Siente que su abdomen esta hinchado?");
+        cardiacas.add("FALTA-APETITO");
+        p.add("¿Usted tiene falta de apetito?");
+        cardiacas.add("HINCHAZON-PIES");
+        p.add("¿Usted siente sus pies hinchados?");
+        cardiacas.add("SILBANCIA");
+        p.add("¿Escucha un pequeño silbido al respirar?");
+        cardiacas.add("VOMITOS");
         p.add("¿Presenta vómitos?");
-        instestinales.add("DOLOR-ARTICULAR");
-        p.add("¿Siente dolor en sus articulaciones?");
-        instestinales.add("CALAMBRE-ABDOMINAL");
-        p.add("¿Presenta calambres abdominales?");
+        cardiacas.add("CONFUSION");
+        p.add("¿Usted tiene complicación para estar consciente?");
+        cardiacas.add("CAMBIO-VISION");
+        p.add("¿Usted siente que su vista cambia?");
+        cardiacas.add("SANGRADO-NASAL");
+        p.add("¿Presenta sangrado en la nariz?");
+        cardiacas.add("BOCA-SECA");
+        p.add("¿Siente que su boca esta reseca?");
+        cardiacas.add("INDIGESTION");
+        p.add("¿Presenta problemas estomacales como indigestión?");
+        cardiacas.add("BOCA-SECA");
+        p.add("¿Siente que su boca esta reseca?");
+        cardiacas.add("INDIGESTION");
+        p.add("¿Presenta problemas estomacales como indigestión?");
+        cardiacas.add("URTICARIA");
+        p.add("¿Presenta enrojecimiento y ardor en la piel?");
+        cardiacas.add("HINCHAZON-EXTREMIDADES");
+        p.add("¿Siente que sus pies y brazos estan hinchados?");
+        cardiacas.add("DIFICULTAD-INTESTINAL");
+        p.add("¿Tiene problemas para ir al baño?");
+        cardiacas.add("VISION-BORROSA");
+        p.add("¿Usted siente que su vista esta borrosa?");
     }
 
-    private void SintomasGastritis() {
-        Enfermedad gastritis = new Enfermedad();
-        gastritis.addSintoma("DOLOR-ABDOMINAL", 1);
-        gastritis.addSintoma("NAUSEAS", 1);
-        gastritis.addSintoma("VOMITO", 1);
-        gastritis.addSintoma("LLENURA", 1);
-        gastritis.addSintoma("FALTA-APETITO", 4);
-        gastritis.addSintoma("PERDIDA-PESO", 4);
-        enfermedades.add(gastritis);
-        nombreEnf.add("Gastritis");
+    private void SintomasInsuficienciaCardiaca() {
+        Enfermedad insuficienciaCardiaca = new Enfermedad();
+        insuficienciaCardiaca.addSintoma("DOLOR-PECHO", 3);
+        insuficienciaCardiaca.addSintoma("NAUSEAS", 1);
+        insuficienciaCardiaca.addSintoma("FALTA-ALIENTO-ACTIVIDAD-FISICA", 4);
+        insuficienciaCardiaca.addSintoma("SILBANCIA", 3);
+        insuficienciaCardiaca.addSintoma("FATIGA", 4);
+        insuficienciaCardiaca.addSintoma("LATIDOS-ACELERADOS", 5);
+        insuficienciaCardiaca.addSintoma("TOS", 2);
+        insuficienciaCardiaca.addSintoma("HINCHAZON-ABDOMEN", 4);
+        insuficienciaCardiaca.addSintoma("FALTA-APETITO", 4);
+        insuficienciaCardiaca.addSintoma("HINCHAZON-PIES", 4);
 
-    }
-
-    private void SintomasSalmonela() {
-        Enfermedad salmonela = new Enfermedad();
-        salmonela.addSintoma("NAUSEAS", 1);
-        salmonela.addSintoma("VOMITO", 1);
-        salmonela.addSintoma("CALAMBRE-ABDOMINAL", 4);
-        salmonela.addSintoma("DIARREA", 2);
-        salmonela.addSintoma("ESCALOFRIOS", 3);
-        salmonela.addSintoma("DOLOR-CABEZA", 1);
-        salmonela.addSintoma("SANGRE-HECES", 4);
-        enfermedades.add(salmonela);
-        nombreEnf.add("Salmonela");
-    }
-
-    private void SintomasHepatitis() {
-        Enfermedad hepatitis = new Enfermedad();
-        hepatitis.addSintoma("DIARREA", 3);
-        hepatitis.addSintoma("FATIGA", 2);
-        hepatitis.addSintoma("DOLOR-ABDOMINAL", 3);
-        hepatitis.addSintoma("PERDIDA-PESO", 3);
-        hepatitis.addSintoma("FALTA-APETITO", 3);
-        hepatitis.addSintoma("SANGRE-HECES", 5);
-        enfermedades.add(hepatitis);
-        nombreEnf.add("Hepatitis");
+        enfermedades.add(insuficienciaCardiaca);
+        nombreEnf.add("Insuficiencia Cardiaca");
 
     }
 
-    private void SintomasInflamacionIntestinal() {
-        Enfermedad inflamacionIntestinal = new Enfermedad();
-        inflamacionIntestinal.addSintoma("FIEBRE", 2);
-        inflamacionIntestinal.addSintoma("DOLOR-ABDOMINAL", 1);
-        inflamacionIntestinal.addSintoma("DECOLORACION-AMARILLA-OJOS", 5);
-        inflamacionIntestinal.addSintoma("DECOLORACION-AMARILLA-PIEL", 5);
-        inflamacionIntestinal.addSintoma("FALTA-APETITO", 3);
-        inflamacionIntestinal.addSintoma("NAUSEAS", 3);
-        inflamacionIntestinal.addSintoma("VOMITO", 3);
-        inflamacionIntestinal.addSintoma("PICAZON", 2);
-        inflamacionIntestinal.addSintoma("ORINA-AMARILLA-OSCURA", 4);
-        inflamacionIntestinal.addSintoma("DOLOR-ARTICULAR", 2);
-        enfermedades.add(inflamacionIntestinal);
-        nombreEnf.add("Inflamación Instestinal");
+    private void SintomasHipertensionArterial() {
+        Enfermedad hipertensionArterial = new Enfermedad();
+        hipertensionArterial.addSintoma("NAUSEAS", 2);
+        hipertensionArterial.addSintoma("VOMITO", 2);
+        hipertensionArterial.addSintoma("CONFUSION", 4);
+        hipertensionArterial.addSintoma("CAMBIO-VISION", 3);
+        hipertensionArterial.addSintoma("SANGRADO-NASAL", 2);
+        hipertensionArterial.addSintoma("DOLOR-DE-CABEZA", 5);
+        
+        enfermedades.add(hipertensionArterial);
+        nombreEnf.add("Hipertension Arterial");
     }
+
+    private void SintomasColesterolAlto() {
+        Enfermedad colesterolAlto = new Enfermedad();
+        colesterolAlto.addSintoma("DOLOR-PECHO", 3);
+        colesterolAlto.addSintoma("BOCA-SECA", 2);
+        colesterolAlto.addSintoma("DOLOR-CABEZA", 2);
+        colesterolAlto.addSintoma("INDIGESTION", 2);
+        colesterolAlto.addSintoma("URTICARIA", 3);
+
+        colesterolAlto.addSintoma("HINCHAZON-EXTREMIDADES", 5);
+        colesterolAlto.addSintoma("DIFICULTAD-INTESTINAL", 4);
+        colesterolAlto.addSintoma("VISION-BORROSA", 5);
+        enfermedades.add(colesterolAlto);
+        nombreEnf.add("Colesterol Alto");
+
+    }
+
+   
+    
 
 }
