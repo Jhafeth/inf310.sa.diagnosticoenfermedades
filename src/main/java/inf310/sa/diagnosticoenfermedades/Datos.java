@@ -14,7 +14,137 @@ public class Datos {
 
     LinkedList<Enfermedad> enfermedades;
     LinkedList<String> nombreEnf;
-
+    /**********SINTOMAS DE LA PRIMERA RONDA: NO REPETIR EN PREGUNTAS CATEGÓRICAS***********
+        e.add("DOLOR-PECHO"); 
+        e.add("CUESTA-RESPIRAR");1
+        e.add("SILBIDO-RESPIRAR");
+        e.add("HINCHAZON-ARTICULACION");
+        e.add("LATIDOS-ACELERADOS");
+        e.add("ERUPCION-CUTANEA");
+        e.add("DOLOR-CABEZA");
+        e.add("FIEBRE");
+        e.add("FALTA-APETITO");
+        e.add("LLENURA");
+        e.add("DOLOR-ABDOMINAL");
+        e.add("PICAZON-PIEL");
+        e.add("PIEL-SECA");
+        e.add("ARDOR-OJOS");
+        e.add("LAGANAS");
+    *************FIN DE SINTOMAS DE LA PRIMERA RONDA*****************************************/
+    
+    //--------------------------------------------------------------------------
+    //-------------------- ENFERMEDADES RESPIRATORIAS SINTOMAS -----------------
+    //--------------------------------------------------------------------------
+    private void enfermedadesRespiratoriasSintomas() {
+        
+        LinkedList<String> respiratorias = new LinkedList<>();
+        LinkedList<String> p = new LinkedList<>();
+        respiratorias.add("DIFICULTAD-PARA-RESPIRAR");//Supuestamente dificultad respiratoria 
+                                                        //y falta de aire es lo mismo
+        p.add("¿Presenta dificultad para respirar?");
+        
+        respiratorias.add("TOS");
+        p.add("¿Presenta tos?");
+        
+        respiratorias.add("INCAPACIDAD-HABLAR");
+        p.add("¿Presenta alguna dificultad para hablar?");
+        
+        respiratorias.add("TOS-FLEMA");
+        p.add("¿Presenta tos con flema?");
+        
+        respiratorias.add("NAUSEAS");
+        p.add("¿Presenta náuseas?");
+        
+        respiratorias.add("DOLOR-DE-GARGANTA");
+        p.add("¿Presenta dolor de garganta?");
+        
+        respiratorias.add("MALESTAR-GENERAL");
+        p.add("¿Presenta una sensación de malestar general?");
+        
+        respiratorias.add("SECRECION-NASAL");
+        p.add("¿Presenta secreción nasal de algun tipo?");
+        
+        respiratorias.add("DOLOR-MUSCULAR");
+        p.add("¿Presenta dolor muscular?");
+        
+        respiratorias.add("DOLOR-DE-LAS-ARTICULACIONES");
+        p.add("¿Presenta dolor en las articulaciones?");
+        
+        respiratorias.add("CONGESTION-NASAL");
+        p.add("¿Presenta congestión nasal?");
+        
+        respiratorias.add("ESTORNUDOS");
+        p.add("¿Presenta estornudos?");
+        
+        respiratorias.add("PICAZON");
+        p.add("¿Presenta picazón en los ojos o garganta?");
+        
+        respiratorias.add("FATIGA");
+        p.add("¿Presenta fatiga?");
+        
+        respiratorias.add("ESCALOSFRIOS");
+        p.add("¿Presenta escalosfrios?");
+        
+        respiratorias.add("VOMITO");
+        p.add("¿Presenta vómito?");
+        
+        respiratorias.add("DIARREA");
+        p.add("¿Presenta diarrea?");
+        
+        respiratorias.add("MUCOSIDAD-GARGANTA");
+        p.add("¿Presenta alguna sensacion de mucosidad en la garganta?");
+    }
+    //ASMA
+    private void asma(){
+        Enfermedad asma=new Enfermedad();
+        asma.addSintoma("DIFICULTAD-PARA-RESPIRAR", 3);
+        asma.addSintoma("DOLOR-PECHO", 2);
+        asma.addSintoma("TOS", 3);
+        asma.addSintoma("SILBIDO-RESPIRAR", 5);
+        asma.addSintoma("INCAPACIDAD-HABLAR", 5);
+    }
+    //NEUMONIA
+    private void neumonia(){
+        Enfermedad neumonia=new Enfermedad();
+        neumonia.addSintoma("TOS-FLEMA", 3);
+        neumonia.addSintoma("NAUSEAS", 4);
+        neumonia.addSintoma("VOMITO", 4);
+        neumonia.addSintoma("DIARREA", 4);
+        neumonia.addSintoma("FIEBRE", 2);
+        neumonia.addSintoma("DOLOR-PECHO", 4);
+        neumonia.addSintoma("FATIGA", 5);
+        neumonia.addSintoma("ESCALOSFRIOS", 3);
+    }
+    //FARINGITIS
+    private void faringitis(){
+        Enfermedad faringitis=new Enfermedad();
+        faringitis.addSintoma("MALESTAR-GENERAL", 2);
+        faringitis.addSintoma("FIEBRE", 2);
+        faringitis.addSintoma("DOLOR-DE-GARGANTA", 3);
+    }
+    //RESFRIO
+    private void resfrio(){
+        Enfermedad resfrio=new Enfermedad();
+        resfrio.addSintoma("FIEBRE", 2);
+        resfrio.addSintoma("ESCALOSFRIOS", 3);
+        resfrio.addSintoma("DOLOR-DE-CABEZA", 2);
+        resfrio.addSintoma("MALESTAR-GENERAL", 3);
+        resfrio.addSintoma("SECRECION-NASAL", 4);
+        resfrio.addSintoma("CONGESTION-NASAL", 4);
+        resfrio.addSintoma("DOLOR-DE-GARGANTA", 3);
+        resfrio.addSintoma("DOLOR-MUSCULAR", 4);
+        resfrio.addSintoma("DOLOR-DE-LAS-ARTICULACIONES", 5);
+    }
+    //RINITIS
+    private void rinitis(){
+        Enfermedad rinitis=new Enfermedad();
+        rinitis.addSintoma("CONGESTION-NASAL", 4);
+        rinitis.addSintoma("MUCOSIDAD-GARGANTA", 5);
+        rinitis.addSintoma("TOS", 2);
+        rinitis.addSintoma("ESTORNUDOS", 3);
+        rinitis.addSintoma("PICAZON", 4);
+        rinitis.addSintoma("DOLOR-DE-GARGANTA", 3);
+    }
     //--------------------------------------------------------------------------
     //-------------------- ENFERMEDADES VIRALES SINTOMAS -----------------------
     //--------------------------------------------------------------------------
@@ -23,67 +153,67 @@ public class Datos {
         LinkedList<String> p = new LinkedList<>();
         virales.add("DIARREA");
         p.add("¿Usted tiene diarrea?");
-        
+
         virales.add("DIFICULTAD-PARA-RESPIRAR");
         p.add("¿Presenta dificultad para respirar?");
-        
+
         virales.add("DOLOR-EN-EL-PECHO");
         p.add("¿Siente dolor en el pecho?");
-        
+
         virales.add("ERUPCION-CUTANEA");
         p.add("¿Usted presenta erupciones cutáneas?");
-        
+
         virales.add("CANSANCIO");
         p.add("¿Usted se siente cansado/a?");
-        
+
         virales.add("PERDIDA-DE-LA-MOVILIDAD");
         p.add("¿Siente que ha perdido alguna parte de movilidad en su cuerpo?");
-        
+
         virales.add("PERDIDA-DEL-GUSTO-Y-OLFATO");
         p.add("¿Ha perdido el sentido del gusto y del olfato?");
-        
+
         virales.add("PERDIDA-DEL-HABLA");
         p.add("¿Ha perdido la voz?");
-        
+
         virales.add("TOS");
         p.add("¿Presenta tos?");
-        
+
         virales.add("DOLOR-DE-GARGANTA");
         p.add("¿Presenta dolor de garganta?");
-        
+
         virales.add("FATIGA");
         p.add("¿Tiene fatiga?");
-        
+
         virales.add("VOMITO");
         p.add("¿Presenta vómitos?");
-        
+
         virales.add("ESCALOSFRIOS");
         p.add("¿Siente escalosfrios?");
-        
+
         virales.add("NAUSEAS");
         p.add("¿Usted siente náuseas?");
-        
+
         virales.add("DOLOR-EN-LOS-OJOS");
         p.add("¿Tiene dolor en los ojos?");
-        
+
         virales.add("MAREOS");
-         p.add("¿Se siente mareado?");
-         
+        p.add("¿Se siente mareado?");
+
         virales.add("ANOREXIA");
         p.add("¿Usted padece de anorexia?");
-        
+
         virales.add("DOLOR-ABDOMINAL");
         p.add("¿Presenta dolor abdominal?");
-         
+
         virales.add("DELIRIO");
         p.add("¿Ha tenido delirios?");
-        
+
         virales.add("PIEL-Y-OJOS-AMARILLOS");
         p.add("¿Su piel y sus ojos estan de color amarillo?");
-        
+
         virales.add("SANGRADO");
-         p.add("¿Presenta hemorrágea?");
-         
+        p.add("¿Presenta hemorrágea?");
+
         virales.add("DOLOR-ARTICULAR");
         p.add("¿Siente dolor en sus articulaciones?");
 
@@ -108,7 +238,7 @@ public class Datos {
     }
 
     // DENGUE
-        private void dengue() {
+    private void dengue() {
         Enfermedad dengue = new Enfermedad();
         dengue.addSintoma("DOLOR-DE-CABEZA", 2);
         dengue.addSintoma("DOLOR-DE-GARGANTA", 3);
@@ -123,8 +253,9 @@ public class Datos {
         enfermedades.add(dengue);
         nombreEnf.add("Dengue");
     }
+
     // MAYARO
-        private void mayaro() {
+    private void mayaro() {
         Enfermedad mayaro = new Enfermedad();
         mayaro.addSintoma("DIARREA", 3);
         mayaro.addSintoma("DOLOR-DE-CABEZA", 2);
@@ -137,9 +268,10 @@ public class Datos {
         mayaro.addSintoma("VOMITO", 3);
         enfermedades.add(mayaro);
         nombreEnf.add("Mayaro");
-    } 
+    }
+
     // FIEBRE-AMARILLA
-        private void fiebreAmarilla() {
+    private void fiebreAmarilla() {
         Enfermedad fiebreAmarilla = new Enfermedad();
         fiebreAmarilla.addSintoma("FIEBRE", 2);
         fiebreAmarilla.addSintoma("DELIRIO", 5);
@@ -155,8 +287,9 @@ public class Datos {
         enfermedades.add(fiebreAmarilla);
         nombreEnf.add("Fiebre Amarilla");
     }
+
     // CHINKUNGUNHA
-        private void chikunguna() {
+    private void chikunguna() {
         Enfermedad chikunguna = new Enfermedad();
         chikunguna.addSintoma("FIEBRE", 2);
         chikunguna.addSintoma("DOLOR-CORPORAL", 3);
@@ -168,7 +301,7 @@ public class Datos {
         enfermedades.add(chikunguna);
         nombreEnf.add("Chinkunguña");
     }
-        
+
     //--------------------------------------------------------------------------
     //------------------ ENFERMEDADES INTESTINALES SINTOMAS --------------------
     //--------------------------------------------------------------------------
