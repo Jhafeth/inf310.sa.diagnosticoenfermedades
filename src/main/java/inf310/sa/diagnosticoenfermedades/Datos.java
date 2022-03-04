@@ -392,8 +392,203 @@ public class Datos {
         nombreEnf.add("Colesterol Alto");
 
     }
-
-   
     
+    //--------------------------------------------------------------------------
+    //-------------------- ENFERMEDADES EXTERNAS -----------------------
+    //--------------------------------------------------------------------------
+     private void enfermedadesExternasSintomas() {
+        LinkedList<String> externas = new LinkedList<>();
+        LinkedList<String> p = new LinkedList<>();
+        
+        externas.add("INCOMODIDAD");
+        p.add("¿Usted tiene incomodidad en la piel?");
+        
+        externas.add("PIEL SENSIBLE");
+        p.add("¿Usted tiene piel sensible?");
+        
+        externas.add("PIEL SECA");
+        p.add("¿Usted tiene piel seca?");
+        
+        externas.add("DESCAMACION DE LA PIEL");
+        p.add("¿Usted tiene descamacion de la piel?");
+        
+        externas.add("AMPOLLAS");
+        p.add("¿Usted tiene ampollas?");
+        
+        externas.add("PIEL ENGROSADA");
+        p.add("¿Usted tiene piel engrosada?");
+        
+        externas.add("ENROJECIMIENTO DE LA PARTE BLANCA DEL OJO");
+        p.add("¿Usted tiene ojos enrojecidos?");
+        
+        externas.add("INFLAMACION DE LA CONJUNTIVA O DE LOS PARPADOS");
+        p.add("¿Usted tiene inflamacion en los parpados?");
+        
+        externas.add("LAGRIMEO");
+        p.add("¿Usted tiene lagrimeo de ojos?");
+        
+        externas.add("SENSIBILIDAD A LA LUZ");
+        p.add("¿Usted tiene sensibilidad a la luz?");
+        
+        externas.add("LAGAÑAS VERDES O AMARILLAS");
+        p.add("¿Usted tiene lagañas verdes o amarillas?");
+        
+        externas.add("PÁRPADOS LIGERAMENTE PEGADOS");
+        p.add("¿Usted tiene parpados ligeramente pegados?");
+        
+        externas.add("PIEL ESCAMOSA");
+        p.add("¿Usted tiene piel escamosa?");
+ 
+        externas.add("PIEL INFLAMADA");
+        p.add("¿Usted tiene piel inflamada?");
+        
+        externas.add("ARDOR O ESCOZOR");
+        p.add("¿Usted tiene ardor o escozor?");
+        
+     }
+     
+     // DERMATITIS
+    private void dermatitis() {
+        Enfermedad dermatitis = new Enfermedad();
+        dermatitis.addSintoma("PICAZÓN", 2);
+        dermatitis.addSintoma("PIEL SECA", 3);
+        dermatitis.addSintoma("DESCAMACIÓN DE LA PIEL", 2);
+        dermatitis.addSintoma("ERUPCIÓN", 2);
+        dermatitis.addSintoma("AMPOLLAS", 3);
+        dermatitis.addSintoma("PIEL ENGROSADA", 4);
+        enfermedades.add(dermatitis);
+        nombreEnf.add("Dermatitis");
+    }
+    
+    // CONJUNTIVITIS
+    private void conjuntivitis() {
+        Enfermedad conjuntivitis = new Enfermedad();
+        conjuntivitis.addSintoma("ENROJECIMIENTO DE LA PARTE BLANCA DEL OJO", 4);
+        conjuntivitis.addSintoma("INFLAMACIÓN DE LA CONJUNTIVA O DE LOS PÁRPADOS", 5);
+        conjuntivitis.addSintoma("LAGRIMEO", 4);
+        conjuntivitis.addSintoma("SENSIBILIDAD A LA LUZ", 4);
+        conjuntivitis.addSintoma("PICAZÓN, IRRITACIÓN O ARDOR", 2);
+        conjuntivitis.addSintoma("LAGAÑAS VERDES O AMARILLAS", 5);
+        conjuntivitis.addSintoma("PÁRPADOS LIGERAMENTE PEGADOS", 5);
+        enfermedades.add(conjuntivitis);
+        nombreEnf.add("Conjuntivitis");
+    }
+    
+    // PIE DE ATLETA
+    private void pieDeAtleta() {
+        Enfermedad pieDeAtleta = new Enfermedad();
+        pieDeAtleta.addSintoma("PIEL ESCAMOSA", 4);
+        pieDeAtleta.addSintoma("PICAZÓN", 2);
+        pieDeAtleta.addSintoma("PIEL SECA", 4);
+        pieDeAtleta.addSintoma("PIEL INFLAMADA", 5);
+        pieDeAtleta.addSintoma("ARDOR O ESCOZOR", 5);
+        pieDeAtleta.addSintoma("AMPOLLAS", 4);
+        enfermedades.add(pieDeAtleta);
+        nombreEnf.add("Pie de Atleta");
+    }
+    
+    // DISHIDROSIS
+    private void dishidrosis() {
+        Enfermedad dishidrosis = new Enfermedad();
+        dishidrosis.addSintoma("ERUPCIÓN EN LA PIEL EN FORMA DE LLAGA", 2);
+        dishidrosis.addSintoma("PICAZÓN", 3);
+        dishidrosis.addSintoma("INCOMODIDAD", 3);
+        dishidrosis.addSintoma("PIEL SENSIBLE", 2);
+        dishidrosis.addSintoma("ARDOR", 3);
+        enfermedades.add(dishidrosis);
+        nombreEnf.add("Dishidrosis");
+    }
+    
+    //--------------------------------------------------------------------------
+    //-------------------- ENFERMEDADES INTESTINALES -----------------------
+    //--------------------------------------------------------------------------
+    
+    private void SintomasInstetinales() {
+        LinkedList<String> instestinales = new LinkedList<>();
+        LinkedList<String> p = new LinkedList<>();
+        instestinales.add("ESCALOFRIOS");
+        p.add("¿Usted siente escalofríos?");
+        instestinales.add("FATIGA");
+        p.add("¿Tiene fatiga?");
+        instestinales.add("PERDIDA-PESO");
+        p.add("¿Siente que ha perdido peso?");
+        instestinales.add("DIARREA");
+        p.add("¿Usted tiene diarrea?");
+        instestinales.add("SANGRE-HECES");
+        p.add("¿Presenta sangre en las heces?");
+        instestinales.add("DECOLORACION-AMARILLA-OJOS");
+        p.add("¿Presenta decoloración amarilla en los ojos?");
+        instestinales.add("DECOLORACION-AMARILLA-PIEL");
+        p.add("¿Presenta decoloración amarilla en la piel?");
+        instestinales.add("ORINA-AMARILLA-OSCURA");
+        p.add("¿Usted orina amarillo oscuro?");
+        instestinales.add("NAUSEAS");
+        p.add("¿Usted siente náuseas?");
+        instestinales.add("VOMITO");
+        p.add("¿Presenta vómitos?");
+        instestinales.add("DOLOR-ARTICULAR");
+        p.add("¿Siente dolor en sus articulaciones?");
+        instestinales.add("CALAMBRE-ABDOMINAL");
+        p.add("¿Presenta calambres abdominales?");
+    }
+    
+    //GASTRITIS
+    private void SintomasGastritis() {
+        Enfermedad gastritis = new Enfermedad();
+        gastritis.addSintoma("DOLOR-ABDOMINAL", 1);
+        gastritis.addSintoma("NAUSEAS", 1);
+        gastritis.addSintoma("VOMITO", 1);
+        gastritis.addSintoma("LLENURA", 1);
+        gastritis.addSintoma("FALTA-APETITO", 4);
+        gastritis.addSintoma("PERDIDA-PESO", 4);
+        enfermedades.add(gastritis);
+        nombreEnf.add("Gastritis");
 
+    }
+
+    //SALMONELA
+    private void SintomasSalmonela() {
+        Enfermedad salmonela = new Enfermedad();
+        salmonela.addSintoma("NAUSEAS", 1);
+        salmonela.addSintoma("VOMITO", 1);
+        salmonela.addSintoma("CALAMBRE-ABDOMINAL", 4);
+        salmonela.addSintoma("DIARREA", 2);
+        salmonela.addSintoma("ESCALOFRIOS", 3);
+        salmonela.addSintoma("DOLOR-CABEZA", 1);
+        salmonela.addSintoma("SANGRE-HECES", 4);
+        enfermedades.add(salmonela);
+        nombreEnf.add("Salmonela");
+    }
+    
+    //HEPATITIS
+    private void SintomasHepatitis() {
+        Enfermedad hepatitis = new Enfermedad();
+        hepatitis.addSintoma("DIARREA", 3);
+        hepatitis.addSintoma("FATIGA", 2);
+        hepatitis.addSintoma("DOLOR-ABDOMINAL", 3);
+        hepatitis.addSintoma("PERDIDA-PESO", 3);
+        hepatitis.addSintoma("FALTA-APETITO", 3);
+        hepatitis.addSintoma("SANGRE-HECES", 5);
+        enfermedades.add(hepatitis);
+        nombreEnf.add("Hepatitis");
+
+    }
+
+    //INFLAMACION INTESTINAL
+    private void SintomasInflamacionIntestinal() {
+        Enfermedad inflamacionIntestinal = new Enfermedad();
+        inflamacionIntestinal.addSintoma("FIEBRE", 2);
+        inflamacionIntestinal.addSintoma("DOLOR-ABDOMINAL", 1);
+        inflamacionIntestinal.addSintoma("DECOLORACION-AMARILLA-OJOS", 5);
+        inflamacionIntestinal.addSintoma("DECOLORACION-AMARILLA-PIEL", 5);
+        inflamacionIntestinal.addSintoma("FALTA-APETITO", 3);
+        inflamacionIntestinal.addSintoma("NAUSEAS", 3);
+        inflamacionIntestinal.addSintoma("VOMITO", 3);
+        inflamacionIntestinal.addSintoma("PICAZON", 2);
+        inflamacionIntestinal.addSintoma("ORINA-AMARILLA-OSCURA", 4);
+        inflamacionIntestinal.addSintoma("DOLOR-ARTICULAR", 2);
+        enfermedades.add(inflamacionIntestinal);
+        nombreEnf.add("Inflamación Instestinal");
+    }
+    
 }
