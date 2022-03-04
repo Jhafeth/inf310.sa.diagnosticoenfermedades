@@ -73,14 +73,13 @@ public class ArbolB {
     }
 
     private int valoracion(Nodo p, Enfermedad e) {
-//lista de sintomas con sus pesos
-//SUMATORIA DE PESOS / 100
+        //lista de sintomas con sus pesos
         String nombre;
         int s = 0;
         int value;
         while (!esHoja(p)) {
             nombre = p.getNombre();
-            value = e.valueOf(nombre);
+            value = e.valueOf(nombre);//PESO DEL SINTOMA
             if (p.getHijoIzq() != null) {//SI
                 s = s + value;
                 p = p.getHijoIzq();
