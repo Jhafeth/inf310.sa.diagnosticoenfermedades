@@ -39,7 +39,7 @@ public final class Datos {
         p.add("Tiene laganas en los ojos?");
     }
 
-    public final void enfermedadesPrimerEtapa(LinkedList<Enfermedad> enfermedades, LinkedList<String> nombreEnf) {
+    public final static void enfermedadesPrimerEtapa(LinkedList<Enfermedad> enfermedades, LinkedList<String> nombreEnf) {
         Enfermedad e = new Enfermedad();
 //enfermedades respiratorias: rinitis asma neumonia faringitis resfrio
         e.addSintoma("DOLOR-PECHO", 2);
@@ -82,7 +82,7 @@ public final class Datos {
     //--------------------------------------------------------------------------
     //-------------------- ENFERMEDADES RESPIRATORIAS SINTOMAS -----------------
     //--------------------------------------------------------------------------
-    public final void sintomasEnfermedadesRespiratorias(LinkedList<String> respiratorias, LinkedList<String> p) {
+    public final static void sintomasEnfermedadesRespiratorias(LinkedList<String> respiratorias, LinkedList<String> p) {
 
         respiratorias.add("TOS");
         p.add("¿Presenta tos?");
@@ -136,7 +136,7 @@ public final class Datos {
         p.add("¿Presenta alguna sensacion de mucosidad en la garganta?");
     }
 
-    public final void enfermedadesRespiratorias(LinkedList<Enfermedad> enfermedades, LinkedList<String> nombreEnf) {
+    public final static void enfermedadesRespiratorias(LinkedList<Enfermedad> enfermedades, LinkedList<String> nombreEnf) {
         Enfermedad e = new Enfermedad();
         asma(e);
         enfermedades.add(e);
@@ -217,7 +217,7 @@ public final class Datos {
     //--------------------------------------------------------------------------
     //-------------------- ENFERMEDADES VIRALES SINTOMAS -----------------------
     //--------------------------------------------------------------------------
-    public final void sintomasEnfermedadesVirales(LinkedList<String> virales, LinkedList<String> p) {
+    public final static void sintomasEnfermedadesVirales(LinkedList<String> virales, LinkedList<String> p) {
 
         virales.add("DIARREA");
         p.add("¿Usted tiene diarrea?");
@@ -275,7 +275,7 @@ public final class Datos {
 
     }
 
-    public final void enfermedadesVirales(LinkedList<Enfermedad> enfermedades, LinkedList<String> nombreEnf) {
+    public final static void enfermedadesVirales(LinkedList<Enfermedad> enfermedades, LinkedList<String> nombreEnf) {
         Enfermedad e = new Enfermedad();
         covid(e);
         enfermedades.add(e);
@@ -368,7 +368,7 @@ public final class Datos {
     //--------------------------------------------------------------------------
     //------------------ ENFERMEDADES CARDIACAS SINTOMAS --------------------
     //--------------------------------------------------------------------------
-    public final void sintomasEnfermedadesCardiacas(LinkedList<String> cardiacas, LinkedList<String> p) {
+    public final static void sintomasEnfermedadesCardiacas(LinkedList<String> cardiacas, LinkedList<String> p) {
 
         cardiacas.add("HINCHAZON-ABDOMEN");
         p.add("¿Siente que su abdomen esta hinchado?");
@@ -401,7 +401,7 @@ public final class Datos {
         p.add("¿Usted siente que su vista esta borrosa?");
     }
 
-    public final void enfermedadesCardiacas(LinkedList<Enfermedad> enfermedades, LinkedList<String> nombreEnf) {
+    public final static void enfermedadesCardiacas(LinkedList<Enfermedad> enfermedades, LinkedList<String> nombreEnf) {
         Enfermedad e = new Enfermedad();
         insuficienciaCardiaca(e);
         enfermedades.add(e);
@@ -453,7 +453,7 @@ public final class Datos {
     //--------------------------------------------------------------------------
     //-------------------- ENFERMEDADES EXTERNAS -----------------------
     //--------------------------------------------------------------------------
-    public final void sintomasEnfermedadesExternas(LinkedList<String> externas, LinkedList<String> p) {
+    public final static void sintomasEnfermedadesExternas(LinkedList<String> externas, LinkedList<String> p) {
         externas.add("PIEL-SENSIBLE");
         p.add("¿Usted tiene piel sensible?");
 
@@ -488,7 +488,7 @@ public final class Datos {
         p.add("¿Usted tiene ardor o escozor en la piel?");
     }
 
-    public final void enfermedadesExternas(LinkedList<Enfermedad> enfermedades, LinkedList<String> nombreEnf) {
+    public final static void enfermedadesExternas(LinkedList<Enfermedad> enfermedades, LinkedList<String> nombreEnf) {
         Enfermedad e = new Enfermedad();
         dermatitis(e);
         enfermedades.add(e);
@@ -548,7 +548,7 @@ public final class Datos {
     //--------------------------------------------------------------------------
     //-------------------- ENFERMEDADES INTESTINALES -----------------------
     //--------------------------------------------------------------------------
-    public void sintomasEnfermedadesInstetinales(LinkedList<String> instestinales, LinkedList<String> p) {
+    public final static void sintomasEnfermedadesInstetinales(LinkedList<String> instestinales, LinkedList<String> p) {
         instestinales.add("ESCALOFRIOS");
         p.add("¿Usted siente escalofríos?");
 
@@ -586,7 +586,7 @@ public final class Datos {
         p.add("¿Presenta calambres abdominales?");
     }
 
-    public final void enfermedadesIntestinales(LinkedList<Enfermedad> enfermedades, LinkedList<String> nombreEnf) {
+    public final static void enfermedadesIntestinales(LinkedList<Enfermedad> enfermedades, LinkedList<String> nombreEnf) {
         Enfermedad e = new Enfermedad();
         gastritis(e);
         enfermedades.add(e);
