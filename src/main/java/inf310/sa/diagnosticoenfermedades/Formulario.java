@@ -216,13 +216,18 @@ public class Formulario extends javax.swing.JFrame {
         int mayor = 0;
         posMayor = -1;
         jta.append("------------------------" + '\n');
+        int posEnfermedad=0;
         for (int i = 0; i < enfermedades.size(); i++) {
             a = A.valoracion(enfermedades.get(i));
-            posMayor = (a > mayor) ? i : posMayor;
+            if (a>mayor) {
+                posMayor=i;
+                posEnfermedad=i;
+            }
             mayor = (a > mayor) ? a : mayor;
             jta.append(nombreEnf.get(i) + " : " + a + '\n');
         }
-        jta.append("Enfermedad probable: " + nombreEnf.get(posMayor) + " " + mayor + '\n');
+        float porcentaje=mayor/enfermedades.get(posEnfermedad).sumatoriaPesos()*100;
+        jta.append("Enfermedad probable: " + nombreEnf.get(posMayor) + " " + porcentaje + "%" +'\n');
     }//GEN-LAST:event_btnEval2ActionPerformed
 
     /**

@@ -91,4 +91,6 @@ public class ArbolB {
     public int valoracion(Enfermedad e) {
         return valoracion(raiz, e);
     }
+    
+    
 }

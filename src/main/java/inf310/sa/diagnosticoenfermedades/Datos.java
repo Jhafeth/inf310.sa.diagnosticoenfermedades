@@ -72,8 +72,9 @@ public final class Datos {
         e = new Enfermedad();
         e.addSintoma("ERUPCION-CUTANEA", 3);
         e.addSintoma("DOLOR-CABEZA", 4);
-        e.addSintoma("FIEBRE", 3);
+        e.addSintoma("FIEBRE", 4);
         e.addSintoma("DOLOR-DE-GARGANTA", 2);
+        e.addSintoma("DOLOR-PECHO", 2);
         enfermedades.add(e);
         nombreEnf.add("Enfermedades Virales");
 
