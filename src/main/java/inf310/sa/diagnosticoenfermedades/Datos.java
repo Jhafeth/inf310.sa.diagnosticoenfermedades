@@ -6,7 +6,7 @@ import java.util.LinkedList;
 public final class Datos {
 
 //PRIMER ETAPA
-    public final void sintomasPrimerEtapa(LinkedList<String> e, LinkedList<String> p) {
+    public final static void sintomasPrimerEtapa(LinkedList<String> e, LinkedList<String> p) {
         e.add("DOLOR-PECHO");
         e.add("CUESTA-RESPIRAR");
         e.add("SILBIDO-RESPIRAR");
@@ -27,10 +27,10 @@ public final class Datos {
         p.add("Tiene Dificultad al respirar?");
         p.add("Escucha un silbido cuando respira?");
         p.add("Presenta hinchazon en sus articulaciones");
-        p.add("Tiene Erupciones en la piel?");
-        p.add("Tiene Dolor de Cabeza?");
-        p.add("Presenta Fiebre?");
-        p.add("Presenta falta de apetito, no tiene fanas de comer?");
+        p.add("Tiene erupciones en la piel?");
+        p.add("Tiene dolor de Cabeza?");
+        p.add("Presenta fiebre?");
+        p.add("Presenta falta de apetito, no tiene ganas de comer?");
         p.add("Siente sensacion de llenura?");
         p.add("Siente dolor en el abdomen?");
         p.add("Tiene picazon en la piel?");
