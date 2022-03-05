@@ -163,7 +163,7 @@ public final class Datos {
         nombreEnf.add("Resfrio");
     }
 
-    private void asma(Enfermedad asma) {
+    private static void asma(Enfermedad asma) {
         //Enfermedad asma = new Enfermedad();
         asma.addSintoma("CUESTA-RESPIRAR", 3);
         asma.addSintoma("DOLOR-PECHO", 2);
@@ -172,7 +172,7 @@ public final class Datos {
         asma.addSintoma("INCAPACIDAD-HABLAR", 5);
     }
 
-    private void neumonia(Enfermedad neumonia) {
+    private static void neumonia(Enfermedad neumonia) {
         //Enfermedad neumonia = new Enfermedad();
         neumonia.addSintoma("TOS-FLEMA", 3);
         neumonia.addSintoma("NAUSEAS", 4);
@@ -184,14 +184,14 @@ public final class Datos {
         neumonia.addSintoma("ESCALOSFRIOS", 3);
     }
 
-    private void faringitis(Enfermedad faringitis) {
+    private static void faringitis(Enfermedad faringitis) {
         //Enfermedad faringitis = new Enfermedad();
         faringitis.addSintoma("MALESTAR-GENERAL", 2);
         faringitis.addSintoma("FIEBRE", 2);
         faringitis.addSintoma("DOLOR-DE-GARGANTA", 3);
     }
 
-    private void resfrio(Enfermedad resfrio) {
+    private static void resfrio(Enfermedad resfrio) {
         //Enfermedad resfrio = new Enfermedad();
         resfrio.addSintoma("FIEBRE", 2);
         resfrio.addSintoma("ESCALOSFRIOS", 3);
@@ -204,7 +204,7 @@ public final class Datos {
         resfrio.addSintoma("DOLOR-DE-LAS-ARTICULACIONES", 5);
     }
 
-    private void rinitis(Enfermedad rinitis) {
+    private static void rinitis(Enfermedad rinitis) {
         //Enfermedad rinitis = new Enfermedad();
         rinitis.addSintoma("CONGESTION-NASAL", 4);
         rinitis.addSintoma("MUCOSIDAD-GARGANTA", 5);
@@ -302,7 +302,7 @@ public final class Datos {
         nombreEnf.add("Chinkunguña");
     }
 
-    private void covid(Enfermedad covid) {
+    private static void covid(Enfermedad covid) {
         covid.addSintoma("DIARREA", 3);
         covid.addSintoma("CUESTA-RESPIRAR", 5);
         covid.addSintoma("DOLOR-CABEZA", 2);
@@ -316,7 +316,7 @@ public final class Datos {
         covid.addSintoma("TOS", 4);
     }
 
-    private void dengue(Enfermedad dengue) {
+    private static void dengue(Enfermedad dengue) {
         dengue.addSintoma("DOLOR-CABEZA", 2);
         dengue.addSintoma("DOLOR-DE-GARGANTA", 3);
         dengue.addSintoma("ERUPCION-CUTANEA", 3);
@@ -329,7 +329,7 @@ public final class Datos {
         dengue.addSintoma("VOMITO", 3);
     }
 
-    private void mayaro(Enfermedad mayaro) {
+    private static void mayaro(Enfermedad mayaro) {
         mayaro.addSintoma("DIARREA", 3);
         mayaro.addSintoma("DOLOR-CABEZA", 2);
         mayaro.addSintoma("DOLOR-EN-LOS-OJOS", 5);
@@ -341,7 +341,7 @@ public final class Datos {
         mayaro.addSintoma("VOMITO", 3);
     }
 
-    private void fiebreAmarilla(Enfermedad fiebreAmarilla) {
+    private static void fiebreAmarilla(Enfermedad fiebreAmarilla) {
         fiebreAmarilla.addSintoma("FIEBRE", 2);
         fiebreAmarilla.addSintoma("DELIRIO", 5);
         fiebreAmarilla.addSintoma("DOLOR-CORPORAL", 3);
@@ -355,7 +355,7 @@ public final class Datos {
         fiebreAmarilla.addSintoma("VOMITO", 3);
     }
 
-    private void chikunguna(Enfermedad chikunguna) {
+    private static void chikunguna(Enfermedad chikunguna) {
         chikunguna.addSintoma("FIEBRE", 2);
         chikunguna.addSintoma("DOLOR-CORPORAL", 3);
         chikunguna.addSintoma("DOLOR-CABEZA", 2);
@@ -418,7 +418,7 @@ public final class Datos {
         nombreEnf.add("Colesterol Alto");
     }
 
-    private void insuficienciaCardiaca(Enfermedad insuficienciaCardiaca) {
+    private static void insuficienciaCardiaca(Enfermedad insuficienciaCardiaca) {
         insuficienciaCardiaca.addSintoma("DOLOR-PECHO", 3);
         insuficienciaCardiaca.addSintoma("NAUSEAS", 1);
         insuficienciaCardiaca.addSintoma("CUESTA-RESPIRAR", 4);
@@ -431,7 +431,7 @@ public final class Datos {
         insuficienciaCardiaca.addSintoma("HINCHAZON-PIES", 4);
     }
 
-    private void hipertensionArterial(Enfermedad hipertensionArterial) {
+    private static void hipertensionArterial(Enfermedad hipertensionArterial) {
         hipertensionArterial.addSintoma("NAUSEAS", 2);
         hipertensionArterial.addSintoma("VOMITO", 2);
         hipertensionArterial.addSintoma("VISION-BORROSA", 3);
@@ -439,7 +439,7 @@ public final class Datos {
         hipertensionArterial.addSintoma("DOLOR-CABEZA", 5);
     }
 
-    private void colesterolAlto(Enfermedad colesterolAlto) {
+    private static void colesterolAlto(Enfermedad colesterolAlto) {
         colesterolAlto.addSintoma("DOLOR-PECHO", 3);
         colesterolAlto.addSintoma("BOCA-SECA", 2);
         colesterolAlto.addSintoma("DOLOR-CABEZA", 2);
@@ -510,7 +510,7 @@ public final class Datos {
         nombreEnf.add("Dishidrosis");
     }
 
-    private void dermatitis(Enfermedad dermatitis) {
+    private static void dermatitis(Enfermedad dermatitis) {
         dermatitis.addSintoma("PICAZON", 2);
         dermatitis.addSintoma("PIEL-SECA", 3);
         dermatitis.addSintoma("DESCAMACION-PIEL", 2);
@@ -519,7 +519,7 @@ public final class Datos {
         dermatitis.addSintoma("PIEL-ENGROSADA", 4);
     }
 
-    private void conjuntivitis(Enfermedad conjuntivitis) {
+    private static void conjuntivitis(Enfermedad conjuntivitis) {
         conjuntivitis.addSintoma("OJO-ROJO", 4);
         conjuntivitis.addSintoma("OJO-INFLAMADO", 5);
         conjuntivitis.addSintoma("LAGRIMEO", 4);
@@ -529,7 +529,7 @@ public final class Datos {
         conjuntivitis.addSintoma("PARPADOS-PEGADOS", 5);
     }
 
-    private void pieDeAtleta(Enfermedad pieDeAtleta) {
+    private static void pieDeAtleta(Enfermedad pieDeAtleta) {
         pieDeAtleta.addSintoma("DESCAMACION-PIEL", 4);
         pieDeAtleta.addSintoma("PICAZON-PIEL", 2);
         pieDeAtleta.addSintoma("PIEL-SECA", 4);
@@ -538,7 +538,7 @@ public final class Datos {
         pieDeAtleta.addSintoma("AMPOLLAS", 4);
     }
 
-    private void dishidrosis(Enfermedad dishidrosis) {
+    private static void dishidrosis(Enfermedad dishidrosis) {
         dishidrosis.addSintoma("ERUPCION-CUTANEA", 2);
         dishidrosis.addSintoma("PICAZON-PIEL", 3);
         dishidrosis.addSintoma("PIEL-SENSIBLE", 2);
@@ -608,7 +608,7 @@ public final class Datos {
         nombreEnf.add("Inflamación Instestinal");
     }
 
-    private void gastritis(Enfermedad gastritis) {
+    private static void gastritis(Enfermedad gastritis) {
         gastritis.addSintoma("DOLOR-ABDOMINAL", 1);
         gastritis.addSintoma("NAUSEAS", 1);
         gastritis.addSintoma("VOMITO", 1);
@@ -617,7 +617,7 @@ public final class Datos {
         gastritis.addSintoma("PERDIDA-PESO", 4);
     }
 
-    private void salmonela(Enfermedad salmonela) {
+    private static void salmonela(Enfermedad salmonela) {
         salmonela.addSintoma("NAUSEAS", 1);
         salmonela.addSintoma("VOMITO", 1);
         salmonela.addSintoma("CALAMBRE-ABDOMINAL", 4);
@@ -627,7 +627,7 @@ public final class Datos {
         salmonela.addSintoma("SANGRE-HECES", 4);
     }
 
-    private void hepatitis(Enfermedad hepatitis) {
+    private static void hepatitis(Enfermedad hepatitis) {
         hepatitis.addSintoma("DIARREA", 3);
         hepatitis.addSintoma("FATIGA", 2);
         hepatitis.addSintoma("DOLOR-ABDOMINAL", 3);
@@ -636,7 +636,7 @@ public final class Datos {
         hepatitis.addSintoma("SANGRE-HECES", 5);
     }
 
-    private void inflamacionIntestinal(Enfermedad inflamacionIntestinal) {
+    private static void inflamacionIntestinal(Enfermedad inflamacionIntestinal) {
         inflamacionIntestinal.addSintoma("FIEBRE", 2);
         inflamacionIntestinal.addSintoma("DOLOR-ABDOMINAL", 1);
         inflamacionIntestinal.addSintoma("OJO-AMARILLO", 5);
