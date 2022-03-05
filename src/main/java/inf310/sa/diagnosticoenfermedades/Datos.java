@@ -157,13 +157,8 @@ public final class Datos {
 
         e = new Enfermedad();
         neumonia(e);
-        enfermedades.add(e);
+        enfermedades.add(e); 
         nombreEnf.add("Neumonia");
-
-        e = new Enfermedad();
-        faringitis(e);
-        enfermedades.add(e);
-        nombreEnf.add("Faringitis");
 
         e = new Enfermedad();
         resfrio(e);
@@ -173,7 +168,7 @@ public final class Datos {
         e = new Enfermedad();
         rinitis(e);
         enfermedades.add(e);
-        nombreEnf.add("Resfrio");
+        nombreEnf.add("Rinitis");
     }
 
     private static void asma(Enfermedad asma) {
@@ -194,13 +189,6 @@ public final class Datos {
         neumonia.addSintoma("FATIGA", 5);
         neumonia.addSintoma("ESCALOSFRIOS", 3);
     }
-
-    private static void faringitis(Enfermedad faringitis) {
-        faringitis.addSintoma("MALESTAR-GENERAL", 2);
-        faringitis.addSintoma("FIEBRE", 2);
-        faringitis.addSintoma("DOLOR-DE-GARGANTA", 3);
-    }
-
     private static void resfrio(Enfermedad resfrio) {
         resfrio.addSintoma("FIEBRE", 2);
         resfrio.addSintoma("ESCALOSFRIOS", 3);
