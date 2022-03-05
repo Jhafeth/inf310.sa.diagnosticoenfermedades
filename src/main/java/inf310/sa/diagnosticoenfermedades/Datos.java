@@ -7,67 +7,89 @@ public final class Datos {
 
     public final static void sintomasPrimerEtapa(LinkedList<String> e, LinkedList<String> p) {
         e.add("DOLOR-PECHO");
-        e.add("CUESTA-RESPIRAR");
-        e.add("SILBIDO-RESPIRAR");
-        e.add("HINCHAZON-ARTICULACION");
-        e.add("LATIDOS-ACELERADOS");
-        e.add("ERUPCION-CUTANEA");
-        e.add("DOLOR-CABEZA");
-        e.add("FIEBRE");
-        e.add("FALTA-APETITO");
-        e.add("LLENURA");
-        e.add("DOLOR-ABDOMINAL");
-        e.add("PICAZON-PIEL");
-        e.add("PIEL-SECA");
-        e.add("ARDOR-OJOS");
-        e.add("LAGANAS");
-
         p.add("Presenta dolor en el pecho?");
-        p.add("Tiene Dificultad al respirar?");
-        p.add("Escucha un silbido cuando respira?");
+
+        e.add("CUESTA-RESPIRAR");
+        p.add("Tiene dificultad al respirar?");
+
+        e.add("DOLOR-DE-GARGANTA");
+        p.add("¿Presenta dolor de garganta?");
+
+        e.add("HINCHAZON-ARTICULACION");
         p.add("Presenta hinchazon en sus articulaciones");
+
+        e.add("LATIDOS-ACELERADOS");
+        p.add("Tiene sus latidos acelerados?");
+
+        e.add("ERUPCION-CUTANEA");
         p.add("Tiene erupciones en la piel?");
+
+        e.add("DOLOR-CABEZA");
         p.add("Tiene dolor de Cabeza?");
+
+        e.add("FIEBRE");
         p.add("Presenta fiebre?");
+
+        e.add("FALTA-APETITO");
         p.add("Presenta falta de apetito, no tiene ganas de comer?");
+
+        e.add("LLENURA");
         p.add("Siente sensacion de llenura?");
+
+        e.add("DOLOR-ABDOMINAL");
         p.add("Siente dolor en el abdomen?");
+
+        e.add("PICAZON-PIEL");
         p.add("Tiene picazon en la piel?");
+
+        e.add("PIEL-SECA");
         p.add("Siente su piel seca?");
+
+        e.add("ARDOR-OJOS");
         p.add("Presenta ardor en los ojos?");
+
+        e.add("LAGANAS");
         p.add("Tiene laganas en los ojos?");
     }
 
     public final static void enfermedadesPrimerEtapa(LinkedList<Enfermedad> enfermedades, LinkedList<String> nombreEnf) {
         Enfermedad e = new Enfermedad();
         e.addSintoma("DOLOR-PECHO", 2);
-        e.addSintoma("CUESTA-RESPIRAR", 3);
-        e.addSintoma("SILBIDO-RESPIRAR", 5);
+        e.addSintoma("DOLOR-DE-GARGANTA", 5);
+        e.addSintoma("CUESTA-RESPIRAR", 5);
+        e.addSintoma("FIEBRE", 3);
         enfermedades.add(e);
         nombreEnf.add("Enfermedades Respiratorias");
+
         e = new Enfermedad();
-        e.addSintoma("HINCHAZON-ARTICULACION", 2);
-        e.addSintoma("DOLOR-PECHO", 3);
-        e.addSintoma("LATIDOS-ACELERADOS", 5);
+        e.addSintoma("HINCHAZON-ARTICULACION", 3);
+        e.addSintoma("DOLOR-PECHO", 5);
+        e.addSintoma("CUESTA-RESPIRAR", 1);
+        e.addSintoma("LATIDOS-ACELERADOS", 4);
         enfermedades.add(e);
         nombreEnf.add("Enfermedades Cardiacas");
+
         e = new Enfermedad();
-        e.addSintoma("ERUPCION-CUTANEA", 2);
-        e.addSintoma("DOLOR-CABEZA", 3);
-        e.addSintoma("FIEBRE", 5);
+        e.addSintoma("ERUPCION-CUTANEA", 3);
+        e.addSintoma("DOLOR-CABEZA", 4);
+        e.addSintoma("FIEBRE", 3);
+        e.addSintoma("DOLOR-DE-GARGANTA", 2);
         enfermedades.add(e);
         nombreEnf.add("Enfermedades Virales");
+
         e = new Enfermedad();
-        e.addSintoma("FALTA-APETITO", 2);
+        e.addSintoma("FALTA-APETITO", 3);
         e.addSintoma("LLENURA", 3);
-        e.addSintoma("DOLOR-ABDOMINAL", 4);
+        e.addSintoma("DOLOR-ABDOMINAL", 5);
+        e.addSintoma("FIEBRE", 3);
         enfermedades.add(e);
         nombreEnf.add("Enfermedades Intestinales");
+
         e = new Enfermedad();
-        e.addSintoma("PICAZON-PIEL", 2);
+        e.addSintoma("PICAZON-PIEL", 3);
         e.addSintoma("PIEL-SECA", 3);
-        e.addSintoma("ARDOR-OJOS", 3);
-        e.addSintoma("LAGANAS", 3);
+        e.addSintoma("ARDOR-OJOS", 4);
+        e.addSintoma("LAGANAS", 5);
         enfermedades.add(e);
         nombreEnf.add("Enfermedades Externas");
     }
@@ -80,14 +102,14 @@ public final class Datos {
         respiratorias.add("INCAPACIDAD-HABLAR");
         p.add("¿Presenta alguna dificultad para hablar?");
 
+        respiratorias.add("SILBIDO-RESPIRAR");
+        p.add("Escucha un silbido cuando respira?");
+
         respiratorias.add("TOS-FLEMA");
         p.add("¿Presenta tos con flema?");
 
         respiratorias.add("NAUSEAS");
         p.add("¿Presenta náuseas?");
-
-        respiratorias.add("DOLOR-DE-GARGANTA");
-        p.add("¿Presenta dolor de garganta?");
 
         respiratorias.add("MALESTAR-GENERAL");
         p.add("¿Presenta una sensación de malestar general?");
