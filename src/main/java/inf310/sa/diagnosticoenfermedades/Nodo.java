@@ -1,9 +1,6 @@
 package inf310.sa.diagnosticoenfermedades;
 
-/**
- *
- * @author Jhafeth
- */
+/* @author Jhafeth */
 public class Nodo {
 
     private Nodo hijoIzq;
@@ -15,8 +12,6 @@ public class Nodo {
         this.nombre = null;
         this.hijoDer = null;
     }
-
-  
 
     public Nodo getHijoIzq() {
         return hijoIzq;

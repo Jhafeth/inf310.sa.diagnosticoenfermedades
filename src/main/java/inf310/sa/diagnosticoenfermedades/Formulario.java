@@ -1,16 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package inf310.sa.diagnosticoenfermedades;
 
 import java.util.LinkedList;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Jhafe
- */
+/* @author Jhafeth */
 public class Formulario extends javax.swing.JFrame {
 
     /**
@@ -203,23 +196,18 @@ public class Formulario extends javax.swing.JFrame {
         LinkedList<String> nombreEnf = new LinkedList<>();
         switch (posMayor) {
             case 0:
-                //Datos.sintomasEnfermedadesRespiratorias(e, p);
                 Datos.enfermedadesRespiratorias(enfermedades, nombreEnf);
                 break;
             case 1:
-                //Datos.sintomasEnfermedadesCardiacas(e, p);
                 Datos.enfermedadesCardiacas(enfermedades, nombreEnf);
                 break;
             case 2:
-                //Datos.sintomasEnfermedadesVirales(e, p);
                 Datos.enfermedadesVirales(enfermedades, nombreEnf);
                 break;
             case 3:
-                //Datos.sintomasEnfermedadesInstetinales(e, p);
                 Datos.enfermedadesIntestinales(enfermedades, nombreEnf);
                 break;
             case 4:
-                //Datos.sintomasEnfermedadesExternas(e, p);
                 Datos.enfermedadesExternas(enfermedades, nombreEnf);
                 break;
             default:
@@ -227,7 +215,7 @@ public class Formulario extends javax.swing.JFrame {
         int a;
         int mayor = 0;
         posMayor = -1;
-        jta.setText("------------------------" + '\n');
+        jta.append("------------------------" + '\n');
         for (int i = 0; i < enfermedades.size(); i++) {
             a = A.valoracion(enfermedades.get(i));
             posMayor = (a > mayor) ? i : posMayor;

@@ -1,9 +1,6 @@
 package inf310.sa.diagnosticoenfermedades;
 
-/**
- *
- * @author Jhafeth
- */
+/* @author Jhafeth */
 public class Sintoma {
 
     String nombre;

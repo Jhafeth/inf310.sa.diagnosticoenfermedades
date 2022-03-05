@@ -2,10 +2,7 @@ package inf310.sa.diagnosticoenfermedades;
 
 import javax.swing.JTextArea;
 
-/**
- *
- * @author Jhafeth
- */
+/* @author Jhafeth */
 public class ArbolB {
 
     Nodo raiz;

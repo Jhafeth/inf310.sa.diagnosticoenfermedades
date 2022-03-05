@@ -5,7 +5,6 @@ import java.util.LinkedList;
 /* @author Jhafeth */
 public final class Datos {
 
-//PRIMER ETAPA
     public final static void sintomasPrimerEtapa(LinkedList<String> e, LinkedList<String> p) {
         e.add("DOLOR-PECHO");
         e.add("CUESTA-RESPIRAR");
@@ -41,34 +40,29 @@ public final class Datos {
 
     public final static void enfermedadesPrimerEtapa(LinkedList<Enfermedad> enfermedades, LinkedList<String> nombreEnf) {
         Enfermedad e = new Enfermedad();
-//enfermedades respiratorias: rinitis asma neumonia faringitis resfrio
         e.addSintoma("DOLOR-PECHO", 2);
         e.addSintoma("CUESTA-RESPIRAR", 3);
         e.addSintoma("SILBIDO-RESPIRAR", 5);
         enfermedades.add(e);
         nombreEnf.add("Enfermedades Respiratorias");
-//enfermedades cardiacas: insuficiencia hipertension colesterol-alto
         e = new Enfermedad();
         e.addSintoma("HINCHAZON-ARTICULACION", 2);
         e.addSintoma("DOLOR-PECHO", 3);
         e.addSintoma("LATIDOS-ACELERADOS", 5);
         enfermedades.add(e);
         nombreEnf.add("Enfermedades Cardiacas");
-//enfermedades virales: covid dengue mayaro fiebre-amarilla chikungunha
         e = new Enfermedad();
         e.addSintoma("ERUPCION-CUTANEA", 2);
         e.addSintoma("DOLOR-CABEZA", 3);
         e.addSintoma("FIEBRE", 5);
         enfermedades.add(e);
         nombreEnf.add("Enfermedades Virales");
-//enfermedades intestinales: gastritis salmonela hepatitis inflamacion-intestinal
         e = new Enfermedad();
         e.addSintoma("FALTA-APETITO", 2);
         e.addSintoma("LLENURA", 3);
         e.addSintoma("DOLOR-ABDOMINAL", 4);
         enfermedades.add(e);
         nombreEnf.add("Enfermedades Intestinales");
-//enfermedades externas: dermatitis pie-atleta conjuntivitis
         e = new Enfermedad();
         e.addSintoma("PICAZON-PIEL", 2);
         e.addSintoma("PIEL-SECA", 3);
@@ -78,10 +72,6 @@ public final class Datos {
         nombreEnf.add("Enfermedades Externas");
     }
 
-//SEGUNDA ETAPA
-    //--------------------------------------------------------------------------
-    //-------------------- ENFERMEDADES RESPIRATORIAS SINTOMAS -----------------
-    //--------------------------------------------------------------------------
     public final static void sintomasEnfermedadesRespiratorias(LinkedList<String> respiratorias, LinkedList<String> p) {
 
         respiratorias.add("TOS");
@@ -209,9 +199,6 @@ public final class Datos {
         rinitis.addSintoma("DOLOR-DE-GARGANTA", 3);
     }
 
-    //--------------------------------------------------------------------------
-    //-------------------- ENFERMEDADES VIRALES SINTOMAS -----------------------
-    //--------------------------------------------------------------------------
     public final static void sintomasEnfermedadesVirales(LinkedList<String> virales, LinkedList<String> p) {
 
         virales.add("DIARREA");
@@ -305,9 +292,9 @@ public final class Datos {
         covid.addSintoma("ERUPCION-CUTANEA", 2);
         covid.addSintoma("CANSACIO", 3);
         covid.addSintoma("FIEBRE", 2);
-        covid.addSintoma("PERDIDA-DE-LA-MOVILIDAD", 4);
-        covid.addSintoma("PERDIDA-DEL-GUSTO-Y-OLFATO", 5);
-        covid.addSintoma("PERDIDA-DEL-HABLA", 4);///******
+        covid.addSintoma("PERDIDA-DE-LA-MOVILIDAD", 1);
+        covid.addSintoma("PERDIDA-DEL-GUSTO-Y-OLFATO", 10);
+        covid.addSintoma("PERDIDA-DEL-HABLA", 1);
         covid.addSintoma("TOS", 4);
     }
 
@@ -360,9 +347,6 @@ public final class Datos {
         chikunguna.addSintoma("FATIGA", 3);
     }
 
-    //--------------------------------------------------------------------------
-    //------------------ ENFERMEDADES CARDIACAS SINTOMAS --------------------
-    //--------------------------------------------------------------------------
     public final static void sintomasEnfermedadesCardiacas(LinkedList<String> cardiacas, LinkedList<String> p) {
 
         cardiacas.add("HINCHAZON-ABDOMEN");
@@ -445,9 +429,6 @@ public final class Datos {
         colesterolAlto.addSintoma("VISION-BORROSA", 5);
     }
 
-    //--------------------------------------------------------------------------
-    //-------------------- ENFERMEDADES EXTERNAS -----------------------
-    //--------------------------------------------------------------------------
     public final static void sintomasEnfermedadesExternas(LinkedList<String> externas, LinkedList<String> p) {
         externas.add("PIEL-SENSIBLE");
         p.add("¿Usted tiene piel sensible?");
@@ -540,9 +521,6 @@ public final class Datos {
         dishidrosis.addSintoma("ARDOR-PIEL", 3);
     }
 
-    //--------------------------------------------------------------------------
-    //-------------------- ENFERMEDADES INTESTINALES -----------------------
-    //--------------------------------------------------------------------------
     public final static void sintomasEnfermedadesInstetinales(LinkedList<String> instestinales, LinkedList<String> p) {
         instestinales.add("ESCALOFRIOS");
         p.add("¿Usted siente escalofríos?");
