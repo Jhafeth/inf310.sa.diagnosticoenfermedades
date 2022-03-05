@@ -118,7 +118,7 @@ public final class Datos {
         p.add("¿Presenta estornudos?");
 
         respiratorias.add("PICAZON-GARGANTA");
-        p.add("¿Presenta picazón en los ojos o garganta?");
+        p.add("¿Presenta picazón en la garganta?");
 
         respiratorias.add("FATIGA");
         p.add("¿Presenta fatiga?");
@@ -164,7 +164,6 @@ public final class Datos {
     }
 
     private static void asma(Enfermedad asma) {
-        //Enfermedad asma = new Enfermedad();
         asma.addSintoma("CUESTA-RESPIRAR", 3);
         asma.addSintoma("DOLOR-PECHO", 2);
         asma.addSintoma("TOS", 3);
@@ -173,7 +172,6 @@ public final class Datos {
     }
 
     private static void neumonia(Enfermedad neumonia) {
-        //Enfermedad neumonia = new Enfermedad();
         neumonia.addSintoma("TOS-FLEMA", 3);
         neumonia.addSintoma("NAUSEAS", 4);
         neumonia.addSintoma("VOMITO", 4);
@@ -185,14 +183,12 @@ public final class Datos {
     }
 
     private static void faringitis(Enfermedad faringitis) {
-        //Enfermedad faringitis = new Enfermedad();
         faringitis.addSintoma("MALESTAR-GENERAL", 2);
         faringitis.addSintoma("FIEBRE", 2);
         faringitis.addSintoma("DOLOR-DE-GARGANTA", 3);
     }
 
     private static void resfrio(Enfermedad resfrio) {
-        //Enfermedad resfrio = new Enfermedad();
         resfrio.addSintoma("FIEBRE", 2);
         resfrio.addSintoma("ESCALOSFRIOS", 3);
         resfrio.addSintoma("DOLOR-CABEZA", 2);
@@ -205,7 +201,6 @@ public final class Datos {
     }
 
     private static void rinitis(Enfermedad rinitis) {
-        //Enfermedad rinitis = new Enfermedad();
         rinitis.addSintoma("CONGESTION-NASAL", 4);
         rinitis.addSintoma("MUCOSIDAD-GARGANTA", 5);
         rinitis.addSintoma("TOS", 2);
@@ -258,7 +253,7 @@ public final class Datos {
         virales.add("MAREOS");
         p.add("¿Se siente mareado?");
 
-        virales.add("ANOREXIA");///***********
+        virales.add("ANOREXIA");
         p.add("¿Usted padece de anorexia?");
 
         virales.add("DELIRIO");
